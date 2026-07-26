@@ -1,6 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --color-green: #B6F36B;
+    --color-orange: #FF9B61;
+    --bg-app: #222531;
+    --bg-panel: #323645;
+    --bg-chip: #232633;
+    --text-main: #FFFFFF;
+    --text-muted: #9096A8;
+
+    --radius-lg: 1.5vh;
+    --radius-md: 0.6rem;
+    --radius-sm: 0.4rem;
+
+    --gap-sm: 0.5rem;
+    --gap-md: 1rem;
+    --gap-lg: 1.5rem;
+}
+
+/* ===== reset all page ===== */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: var(--bg-app);
+    color: var(--text-main);
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: var(--text-main);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    opacity: 0.08;
+    margin: 20px 0;
+}
+
+/* ========================= */
+/* ========== Sidebare header Menu and humbergur icon ======= */
+.sidebar {
+    width: 300px;
+    height: 95vh;
+    background-color: var(--bg-panel);
+    margin: 18px;
+    border-radius: var(--radius-lg);
+    padding: 15px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-header a i {
+    font-size: 22px;
+}
+
+/* ==================== */
+/* ===== Sidebare List section ===  */
+.list-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.list-item a p {
+    width: 75%;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.list-item a span {
+    background-color: var(--bg-app);
+    padding: 0 8px;
+    border-radius: var(--radius-sm);
+    width: 2rem;
+    text-align: center;
+}
+
+.list-item {
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.list-item:hover {
+    background-color: var(--text-muted);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+}
+
+.lists-list {
+    margin: 0 10px;
+}
+
+.green-box-list i {
+    color: var(--color-green);
+}
+
+.orange-box-list i {
+    color: var(--color-orange);
+}
+
+.add-list-button a p {
+    text-align: left;
+    width: 90%;
+}
+
+.lists-section {
+    margin-top: 100px;
+}
+
+/* ===================================== */
