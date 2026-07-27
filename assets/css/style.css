@@ -49,18 +49,58 @@ hr {
 /* ========================= */
 /* ========== Sidebare header Menu and humbergur icon ======= */
 .sidebar {
-    width: 300px;
+    width: 100px;
     height: 95vh;
     background-color: var(--bg-panel);
     margin: 18px;
     border-radius: var(--radius-lg);
     padding: 15px;
+    transition: width 0.4s ease;
+}
+
+.sidebar:not(:hover) .list-item a p {
+    opacity: 0;
+    width: 0;
+}
+
+.sidebar:not(:hover) .list-item a {
+    gap: 3px;
+}
+
+.sidebar:not(:hover) .sidebar-header h3 {
+    opacity: 0;
+    width: 0;
+}
+
+.sidebar:not(:hover) {
+    text-align: center;
+    font-size: 25px;
+}
+
+.sidebar:not(:hover) .add-list-button a p {
+    opacity: 0;
+    width: 0;
+}
+
+.sidebar:not(:hover) .add-list-button a i {
+    width: 100%;
+    font-size: 20px;
+}
+
+.sidebar:not(:hover) .sidebar-header a {
+    width: 100%;
+}
+
+
+.sidebar:hover {
+    width: 300px;
 }
 
 .sidebar-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 .sidebar-header a i {
@@ -83,6 +123,7 @@ hr {
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 300;
+    transition: 0.3s;
 }
 
 .list-item a span {
@@ -119,6 +160,10 @@ hr {
 .add-list-button a p {
     text-align: left;
     width: 90%;
+}
+
+.add-list-button a i {
+    transition: 0.3s;
 }
 
 .lists-section {
