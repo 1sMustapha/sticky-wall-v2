@@ -29,6 +29,8 @@ body {
     background-color: var(--bg-app);
     color: var(--text-main);
     font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 10px;
 }
 
 a {
@@ -114,6 +116,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 10px;
 }
 
 .list-item a p {
@@ -135,18 +139,16 @@ hr {
 }
 
 .list-item {
-    margin-top: 10px;
     transition: 0.3s;
 }
 
 .list-item:hover {
     background-color: var(--text-muted);
     border-radius: var(--radius-sm);
-    padding: 4px;
 }
 
 .lists-list {
-    margin: 0 10px;
+    margin-top: 20px;
 }
 
 .green-box-list i {
@@ -168,6 +170,49 @@ hr {
 
 .lists-section {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ===================================== */
+/* ====== tags section ======= */
+.tag-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 200px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag-button {
+    width: 70px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    color: var(--bg-app);
+    border-radius: var(--radius-sm);
+    padding: 5px;
+    text-align: center;
+    background-color: #B6F36B;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.add-new-tag {
+    width: 105px;
+    color: var(--text-main);
+    background-color: var(--text-muted);
+}
+
+.tag-orange {
+    background-color: var(--color-orange);
+}
+
+/* ======================== */
