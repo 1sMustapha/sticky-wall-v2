@@ -25,6 +25,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: var(--bg-app);
     color: var(--text-main);
@@ -52,7 +53,7 @@ hr {
 /* ========== Sidebare header Menu and humbergur icon ======= */
 .sidebar {
     width: 100px;
-    height: 95vh;
+    height: 94vh;
     background-color: var(--bg-panel);
     margin: 18px;
     border-radius: var(--radius-lg);
@@ -216,3 +217,77 @@ hr {
 }
 
 /* ======================== */
+.main-sticky-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 94vh;
+    margin-top: 30px;
+}
+
+/* --- stiky father --- for test grid --- */
+.sticky-main-notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+/* ------------ */
+
+
+.stiky-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-green);
+    height: 240px;
+    width: 250px;
+    padding: 15px;
+    color: var(--bg-app);
+    border-radius: 10px;
+}
+
+.stiky-note p,
+.stiky-note-orange p {
+    overflow: hidden;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    height: 150px;
+}
+
+.add-new-sticky {
+    height: 240px;
+    width: 250px;
+    background-color: var(--bg-panel);
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 10px;
+    color: var(--text-main);
+    transition: 0.3s;
+}
+
+.add-new-sticky:hover {
+    background-color: #404453;
+}
+
+.stiky-note a,
+.stiky-note-orange a {
+    color: var(--bg-app);
+    align-self: flex-end;
+    padding-top: 10px;
+}
+
+.stiky-note-orange {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-orange);
+    height: 240px;
+    width: 250px;
+    padding: 15px;
+    color: var(--bg-app);
+    border-radius: 10px;
+}
